@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="home.css">
+	
+		
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+			     <ul>
+					<li><a href="home.html" >首页</a></li>
+					<li><a href="history.html" >历史文化</a></li>
+					<li div class="father">
+						<a href="tour-attract.html">景区
+						<ul class="son">
+							<li><a href="5a.html" >5A级景区</a></li>
+							<li><a href="4a.html" >4A级景区</a></li>
+							<li><a href="wbkj.html">文博科教</a></li>
+						</ul>
+						</a>
+					</li>
+					<li class="father">
+						<a href="#" >线路
+						<ul class="son">
+							<li><a href="road1.html">四大古都焕新之旅</a></li>
+							<li><a href="road2.html">老家河南寻根之旅</a></li>
+							<li><a href="road3.html">华夏文明探源之旅</a></li>
+							<li><a href="road4.html">中原民俗风情之旅</a></li>	
+						</ul>
+						</a>
+					</li>
+					<li class="father">	
+						<a href="food.html">美食
+							
+							<ul class="son">
+								<li><a href="xiaochi.html">地道小吃</a></li>
+								<li><a href="jiayao.html">开胃佳肴</a></li>
+								<li><a href="mian.html">绝味面食</a></li>
+								<li><a href="soup.html">可口鲜汤</a></li>
+							</ul>
+					    </a>	
+					</li>
+					<li><a href="news.html">旅游资讯</a></li>
+					<li><a href="suggest.html">联系我们</a></li>
+				</ul>
+				<ul class="RL">
+					<li><a href="Register.html">注册</a></li>
+					<li><a href="Login.html">登录</a></li>
+				</ul>
+			</nav>
+		</header>
+			<div class="bigbox">
+				<img src="images/RL.jpg" alt="">
+				<div class="rightbox">
+					<h2>注册账号</h2>
+					<div class="xinxi">
+						<form id="reg_form" target="_top">
+							
+						<input type="text"  name="name" id="name" required="required" placeholder="用户名" class="input_yh"><br />
+						<input type="password" name="pass" id="pass" required="required" placeholder="密码" class="input_mm"><br />
+						<input type="password" name="pass_again" id="pass_again" required="required" placeholder="再次输入密码" class="input_mm"><br />
+						<input type="email" name="email" id="emial" required="required" placeholder="邮箱地址"  class="input_el"><br />
+						<button><input type="button"  onclick="validateForm() id="reg_btn" class="button" value="注册" style="outline: 0px;font-size: 18px;width: 180px; height: 25px;border-radius:30px;border:none;background-color: skyblue; -webkit-text-fill-color: white;"></button>
+                        </form>
+					</div>
+				</div>
+				<div class="box-button">
+					<label for="1">
+					      <input type="checkbox" id="1" class="ma">
+					      <span class="one"></span>
+					       记住密码
+					</label>
+					<label for="2">
+					      <input type="checkbox" id="2" class="ma">
+					      <span class="two"></span>
+					      自动登录
+					</label>
+				</div>	           
+			</div>
+	</body>
+	<script>
+	        function validateForm() {
+	            var username = document.getElementById('name').value;
+	            var password = document.getElementById('pass').value;
+	            var pass_again = document.getElementById('pass_again').value;
+	            var email = document.getElementById('email').value;
+	
+	            if (!username || !password || !pass_again || !email) {
+	                alert('所有字段都必须填写');
+	                return;
+	            }
+	
+	            if (password !== pass_again) {
+	                alert('密码和确认密码不一致');
+	                return;
+	            }
+	
+	            // 简单的邮箱格式验证，实际应用中可能需要更复杂的验证逻辑
+	            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	            if (!emailRegex.test(email)) {
+	                alert('邮箱格式不正确');
+	                return;
+	            }
+	
+	            // 如果通过验证，可以在这里提交表单或执行其他操作
+	            alert('注册成功！');
+	        }
+	    </script>
+	<
+
+</html>

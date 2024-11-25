@@ -1,0 +1,587 @@
+/*nav区域全部相同，所以不设特别标签，且只在本页面出现一次*/
+/*header区域 首页、历史文化页和景区页相同，都不固定在顶部用"header"标签标识，其他页面header固定在顶部用"otherheader"标签标识并且都只出现一次*/
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	        background:url(images/bg.jpg);
+			background-color: papayawhip;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;	
+		}
+header{
+	
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+header img{
+	margin-left:10%;
+	width: 80%;
+	height: 400px;
+}
+.otherheader{
+	
+		margin-bottom: 0px;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index:999 ;
+		background-color: blanchedalmond;
+		
+		
+	}
+
+
+nav{
+	width: 100%;
+	height: 50px;
+	line-height: 40px;
+}
+nav ul{
+	        width: 70%;
+			text-align: center;
+			display: inline-block;
+			
+			
+
+		}
+nav ul li{
+			font-size: 18px;
+			display: inline-block;
+			padding: 5px 15px;
+			list-style:none ;
+			line-height: 40px;
+			
+		}
+nav .RL{
+	
+	margin-left: 10%;
+	width: 15%;
+	display: inline-block;
+	padding: 0;
+	
+	
+}
+.RL li{
+	width: 48%;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	font-size: 15px;
+	background-color: aliceblue;
+	
+	
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+.father{
+	position: relative;
+}
+.son{
+	position: absolute;
+	top:50px;
+	left:0;
+	display:none;
+	
+}
+.son li{
+	line-height: 30px;
+	background-color: sandybrown;
+	list-style: none;
+	width: 80px;
+	padding: 5px 10px;
+	color: honeydew;
+	text-align: left;
+	margin-top: 0;
+}
+ .son a{
+	color: honeydew;
+}
+
+li:hover{
+	background-color: lightyellow;
+}
+.father:hover .son{
+	display: block;
+}
+.son li:hover {
+	background-color: saddlebrown;
+}
+
+.homecontent{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.homecontent h2{
+	color: lightyellow;
+	border-bottom: 1px red solid;
+	text-align: center;
+	font-weight: normal;
+	font-family: 楷体;
+}
+.homecontent p{
+	color: ghostwhite;
+	font-weight: 350;
+	padding: 10px 0px;
+}
+.xiangdao{ 
+	width:100%;
+	background-color: skyblue;
+}
+.xiangdao div{
+	margin-top: 0px;
+	width: 24%;
+	display: inline-block;
+	border: 1px solid red;
+	
+	background-color: white;
+}
+.xiangdao ul{
+	margin-top: 0px;
+	
+}
+	
+
+
+.xiangdao li{
+	text-align: center;
+	display: inline-block;
+	width: 40%;
+	list-style: disc;
+	list-style-position: inside;
+	padding-left: 6px;
+	font-size: 14px;	
+}
+.jingqu span{
+	height:300px;
+	background-image: url(images/wan.jpg);
+	background-size: 100% 300px;
+    background-repeat: no-repeat;
+	width: 100%;
+	display: inline-block;
+	z-index:99;
+	font-size: 25px;
+	color: red;
+}
+.xianlu span{
+	height: 300px;
+	background-image: url(images/xing.jpg);
+	background-size: 100% 300px;
+    background-repeat: no-repeat;
+	width: 100%;
+	display: inline-block;
+	z-index:99;
+	font-size: 25px;
+	color: red;
+	}
+.meishi span{
+	height: 300px;
+	background-image: url(images/chi.jpg);
+	background-size: 100% 300px;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: inline-block;
+	z-index:99;
+	font-size: 25px;
+	color: red;
+}
+ .jiudian span{
+	height: 300px;
+	background-image: url(images/zhu.jpg);
+	background-size: 100% 300px;
+	background-repeat:no-repeat;
+	width: 100%;
+	display: inline-block;
+	z-index:99;
+	font-size: 25px;
+	color: red;
+}
+	
+
+.photos img{
+	width: 24%;}
+.homefooter{
+	background-color:skyblue;
+	color: white;
+	text-align: center;
+}
+
+
+
+/*以下为历史文化部分* header区与首页css样式相同*/
+
+
+.historycontent{
+	width: 84%;
+	margin-left: 8%;
+	margin-right: 8%;
+	 background-color:papayawhip;
+			}
+.historycontent h2{
+	color: lightyellow;
+	border-bottom: 1px red solid;
+	text-align: center;
+	font-weight: normal;
+	font-family: 楷体;
+}
+.historycontent section{
+		   
+			font-weight: 350;
+			padding: 10px 5%;
+			}
+.historycontent img{
+	width: 70%;
+	padding: 0 15%;
+}
+.historyfooter{
+	
+	background-color: sandybrown;
+	text-align: center;
+	color: black;
+}
+
+/*以下是景区介绍界面CSS*/
+
+
+
+
+
+
+
+	
+	.jingqucontent{
+		margin-top: 0px;
+		width: 100%;
+		background-color: white;
+		}
+	.jingqucontent a{
+		color: black;
+		text-decoration: none;
+	}
+
+	.jingqucontent section{
+		background-color: cadetblue;
+		position:fixed;
+		top: 50px;
+		width: 11%;
+		height: 100%;
+		padding: 5% 4% 0;
+	}
+	.jingqucontent h2{
+		color: purple;
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+	
+	.jingqucontent section ul{
+	margin-top: 5px;
+	}
+	.jingqucontent  section li{
+	}
+	.jingqucontent section li a{
+		display: inline-block;
+		width: 100%;
+	}
+
+	
+	.jingqucontent .spot{
+		margin-top: 50px;
+		width: 80%;
+		margin-left: 20%;
+		overflow: hidden;
+		
+	}
+	
+	.jingqucontent .spot a{
+		margin: 5px 0;
+		display: block;
+		border-bottom: 1px solid black;
+		padding: 5px 5px;
+		
+	}
+	.jingqucontent .spot a:hover
+	{
+		background-color:ghostwhite;
+		
+	}
+	
+	.jingqucontent .spot img{
+		float: left;
+		width: 24%;
+		height:150px;
+		}
+	.jingqucontent span{
+		display: block;
+		line-height:150px;
+		font-size: 20px;
+		 margin-left: 40%;
+		
+	}
+	
+	
+	/*以下是5A,4A,3A以及文博科教共用的CSS*/
+ .jqclass h2{
+		text-align: center;
+		color:black;
+		margin-top: 8px;
+	}
+	
+	.spot{
+			background-color: ghostwhite;
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 2px;
+		
+	}
+	.spot a{
+		margin-top: 0px;
+		display: block;
+		color: black;
+		border-bottom: 1px solid black;
+		
+	}
+	.spot a:hover
+	{
+		background-color:beige;
+		
+	}
+	
+	.spot img{
+		float: left;
+		width: 20%;
+		height: 196px;
+		margin-bottom: 5px;
+		}
+.jqclass  span{
+		display:block;
+		width: 18%;
+		margin-left: 0px;
+		margin-bottom:5px;
+		color:firebrick
+		
+	}
+.jqclass section{
+		width: 72%;
+		height: 186px;
+		margin-left:23%;
+		padding-top: 15px;
+		
+		text-align:justify;
+	}
+	/*以下是美食以及美食分类各网页的CSS*/
+.foodcontent{
+	width: 100%;
+	background-color: white;
+	margin-top:34px ;
+	}
+.foodcontent a{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.foodcontent section{
+	background-color: cadetblue;
+	position:fixed;
+	top: 50px;
+	width: 11%;
+	height: 100%;
+	padding: 5% 4% ;
+}
+.foodcontent h2{
+	color: purple;
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+.foodcontent section ul{
+margin-top: 5px;
+}
+.foodcontent  section li{
+	margin: 3px 0;
+}
+.foodcontent section li a{
+	display: inline-block;
+	width: 100%;
+}
+.recipe
+{
+	margin-left: 19%;
+	background-color:burlywood;
+	
+	padding-top:10px;
+	margin-top: 50px;
+	
+}
+.recipe a{
+	display: block;
+	color: black;
+	margin-top: 10px;
+	border-bottom: 1px solid white;
+	
+	
+}
+
+.foodcontent span{
+	display: block;
+	width:30%;
+	font-size: 20px;
+}
+.foodcontent img{
+	margin-top: 2px;
+	width: 30%;
+	height: 190px;
+	float: left;
+	
+}
+.foodcontent p{
+	width: 40%;
+	text-align: justify;
+	margin-left:35% ;
+	height: 205px;
+}
+.popular{
+	margin-left:26%;
+	margin-top: 50px;
+	
+}
+.popular div{
+	
+	width:30% ;
+	display: inline-block;
+	text-align:center;
+	height:35%;
+	margin: 10px 5px;
+	
+	
+}
+.popular span{
+	
+	display:inline-block;
+	width:100%;
+	height: 28px;
+	color: firebrick;
+	
+}
+.popular img{
+
+	width: 90%;
+	height: 200px;
+}
+	
+
+/*以下是旅游资讯CSS部分*/
+.news{
+	background-color: white;
+	padding: 0 5%;
+	
+}
+.news div{
+	width: 40%;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	display: inline-block;
+	border: 1px solid black;
+}
+.news img{
+	width: 40%;
+	height: 180px;
+	float: left;
+}
+.news span{
+	display: inline-block;
+	width: 50%;
+	margin-top: 10%;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*建议表单部分*/
+.suggest{
+	
+	width: 20%;
+	margin-left: 35%;
+	margin-top: 50px;
+	background-color: skyblue;
+	padding: 5% 5%;
+	
+}
+.suggest h2{
+	color: red;
+	border: none;
+	
+}
+.suggest .submit{
+	font-size: 15px;
+	margin-top: 15px;
+}
+.suggest label{
+	margin-top: 10px;
+}
+
+
+
+
+
+/*以下是注册登录界面css*/	
+.bigbox{
+	overflow: hidden;
+	width: 50%;
+	margin-left: 30%;
+	margin-top: 6%;
+	background-color: white;
+}
+.bigbox img{
+	float: left;
+	width:60%;
+	margin-left: 0;
+}
+.rightbox{
+	
+	display:block;
+	margin-left: 60%;
+
+}
+.rightbox h2{
+	text-align:left;
+	border: none;
+	color: black;
+	margin-left: 10px;
+
+	margin-top:35px;
+}
+.rightbox .xinxi{
+	display: block;
+	margin-top:35px;
+	margin-left: 25px;
+}
+button{
+	margin-top: 25px;
+}
+
+
+
